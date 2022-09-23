@@ -1,0 +1,125 @@
+* { /* aqui estamos tirando as configurações de cdd existentes no navegador */
+    margin: 0;
+    padding: 0; /* são preenchimentos existentes do navegador */
+    box-sizing: border-box;
+
+    font-family: 'Quicksand', sans-serif;
+    line-height: 160%; /* altura da linha */
+
+}
+
+ul {
+    list-style: none; /* tira as bolinhas da lista do html*/
+}
+
+body {
+    /* background-image: url(./assets/bg1.jpg); */
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+header img:hover {
+    transform: scale(1.1)
+}
+
+header img {
+    max-width: 25%;
+    background-image: linear-gradient(90deg, #0f0f0f 0%, #ffff00 50.52%, #000000 100%);
+    border-radius: 50%;
+    padding: 4px;
+    margin-right: 5%;
+
+    transition: transform .3s;
+
+}
+
+header {
+    display: flex;
+    color: white;
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    align-items: center;
+}
+
+header div {
+    padding: 10px;
+    padding-right: 100px, auto;
+    margin-right: 25px, auto;
+}
+
+header div ul svg {
+    margin-right: 20px;
+    transition: transform .3s;
+}
+
+header div ul svg:hover {
+    transform: scale(1.2);
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+}
+
+section {
+    color: white;
+    background-image:  linear-gradient(90deg,#101010 0%, #ffff00 50.52%, #101010 100%);
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #101010;
+    padding: 32px; 
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #cfcfcf;
+}
+
+section ul { /*aqui estamos trabalhando a organização dos elementos, que por padrão é block(caixas; que é ocupando uma linha inteira)a ul tem por padrão guardar blos dentro dela*/
+    display: flex; /* aqui estamos alterando a organização dos elementos dentro da Ul */
+    flex-wrap: wrap; /* aqui é pra quando tiver mais elementos do que cabe na caixa, ela nao ir infinitivamente para o lado, nesse caso ele joga o excesso para baixo */
+    gap: 16px; /* distancia entre as caixas, mas só funciona com o display flex */
+    margin-top: 24px;
+    
+}
+
+section ul li img:hover {
+    transform: scale(1.1)
+}
+
+section ul li {
+    color: #cfcfcf;
+    line-height: 120%;
+}
+
+.skill-list img {
+    width: 130px;
+    transition: transform .3s;
+}
+
+/* animation */
+
